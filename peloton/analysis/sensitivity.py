@@ -133,7 +133,7 @@ def _plot_morris(results: dict, path: str):
         ax.set_title(q, fontsize=10)
     axes[0].legend(fontsize=8)
     fig.suptitle("Morris screening — which physics drives the emergent "
-                 "behaviour (calibrated discrete_choice)", fontsize=12)
+                 "behaviour (v0.6 binary discrete_choice)", fontsize=12)
     fig.tight_layout(rect=(0, 0, 1, 0.93))
     fig.savefig(path, dpi=110)
     plt.close(fig)
@@ -276,7 +276,7 @@ def _plot_sobol_s2(results: dict, path: str):
     fig.colorbar(last_im, ax=axes, fraction=0.025, pad=0.02,
                  label="S2 (pairwise interaction)")
     fig.suptitle("Sobol second-order indices — which factor *pairs* "
-                 "interact (calibrated discrete_choice)", fontsize=12)
+                 "interact (v0.6 binary discrete_choice)", fontsize=12)
     fig.savefig(path, dpi=110, bbox_inches="tight")
     plt.close(fig)
     print(f"[sensitivity] wrote {path}")
