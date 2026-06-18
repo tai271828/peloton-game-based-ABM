@@ -43,6 +43,7 @@ def available() -> list[str]:
 
 def make_strategy(name: str, params: dict | None = None) -> Strategy:
     """Instantiate a registered strategy by name."""
+    # The classic trick to make plugins
     try:
         cls = STRATEGIES[name]
     except KeyError:

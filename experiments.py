@@ -68,6 +68,7 @@ def _fake_state(energy_frac, progress, wheel=True, drafting=False):
 
 
 def fig_choice_explainer():
+    # where we apply factory/strategy patterns to initiate a strategy
     strat = make_strategy("discrete_choice", fitted_params())
     strat.reset(None)              # probabilities only; no sampling rng needed
     from peloton.strategies.discrete_choice import _ACTIONS
