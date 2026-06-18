@@ -1,0 +1,37 @@
+{
+  "P1_freeriding_pays": {
+    "corr": 0.33996215767970356,
+    "p": 1.0674648074156251e-17,
+    "passes": true
+  },
+  "P2_tragedy": {
+    "t_q0": 311.0,
+    "t_q03": 241.0,
+    "wilcoxon_p": 0.0078125,
+    "passes": true
+  },
+  "P3_winner_sheltered": {
+    "winner_drafted": 0.6806948260071607,
+    "field_drafted": 0.4789893709555309,
+    "passes": true
+  },
+  "P4_low_pull_share": {
+    "share_pull": 0.0207931697740749,
+    "passes": true
+  },
+  "P5_organised_wins": {
+    "leadout_captain": 0.053191489361702114,
+    "selfish_captain": 0.2409131205673759,
+    "passes": true
+  },
+  "P6_finale_spike": {
+    "last10pct_kmh": 46.77193273589764,
+    "overall_kmh": 53.52125276620242,
+    "passes": false
+  },
+  "P7_skill_strategy_docking": {
+    "weak": 0.6138577538137062,
+    "strong": 0.15893724958004202,
+    "passes": true
+  }
+}

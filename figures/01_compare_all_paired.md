@@ -1,0 +1,66 @@
+# Paired strategy contrasts (common random numbers)
+
+n = common seeds per pair; CI = 95% t interval on the per-seed difference; Wilcoxon = signed-rank test.
+
+| metric               | A               | B            |   n |   mean_diff(A-B) |   ci95_half |   wilcoxon_p | significant   |
+|:---------------------|:----------------|:-------------|----:|-----------------:|------------:|-------------:|:--------------|
+| mean_speed_kmh       | discrete_choice | hawk_dove    |  20 |          -6.3351 |      0.1809 |       0      | True          |
+| winner_time_s        | discrete_choice | hawk_dove    |  20 |          33.65   |      2.4685 |       0.0001 | True          |
+| finish_spread_s      | discrete_choice | hawk_dove    |  20 |         -20.5    |      7.8835 |       0.0002 | True          |
+| winner_pull_share    | discrete_choice | hawk_dove    |  20 |           0.0414 |      0.0096 |       0.0001 | True          |
+| drafted_share        | discrete_choice | hawk_dove    |  20 |          -0.0312 |      0.0117 |       0      | True          |
+| winner_drafted_share | discrete_choice | hawk_dove    |  20 |          -0.3373 |      0.0934 |       0      | True          |
+| mean_speed_kmh       | discrete_choice | lead_out     |  20 |          -4.9053 |      0.2021 |       0      | True          |
+| winner_time_s        | discrete_choice | lead_out     |  20 |          42.05   |      2.2186 |       0.0001 | True          |
+| finish_spread_s      | discrete_choice | lead_out     |  20 |         -26.85   |      4.162  |       0.0001 | True          |
+| winner_pull_share    | discrete_choice | lead_out     |  20 |           0.0414 |      0.0096 |       0.0001 | True          |
+| drafted_share        | discrete_choice | lead_out     |  20 |           0.1161 |      0.0077 |       0      | True          |
+| winner_drafted_share | discrete_choice | lead_out     |  20 |          -0.5233 |      0.0908 |       0      | True          |
+| mean_speed_kmh       | discrete_choice | public_goods |  20 |          -6.1902 |      0.1659 |       0      | True          |
+| winner_time_s        | discrete_choice | public_goods |  20 |          27.25   |      2.8605 |       0.0001 | True          |
+| finish_spread_s      | discrete_choice | public_goods |  20 |          -5.25   |      6.4294 |       0.1207 | False         |
+| winner_pull_share    | discrete_choice | public_goods |  20 |          -0.2467 |      0.0817 |       0      | True          |
+| drafted_share        | discrete_choice | public_goods |  20 |          -0.0268 |      0.0162 |       0.0032 | True          |
+| winner_drafted_share | discrete_choice | public_goods |  20 |          -0.2722 |      0.1068 |       0      | True          |
+| mean_speed_kmh       | discrete_choice | random       |  20 |          -8.3416 |      0.2569 |       0      | True          |
+| winner_time_s        | discrete_choice | random       |  20 |          30.6    |      1.3272 |       0.0001 | True          |
+| finish_spread_s      | discrete_choice | random       |  20 |          -0.5    |      6.2173 |       0.8519 | False         |
+| winner_pull_share    | discrete_choice | random       |  20 |          -0.1622 |      0.014  |       0      | True          |
+| drafted_share        | discrete_choice | random       |  20 |          -0.1856 |      0.0142 |       0      | True          |
+| winner_drafted_share | discrete_choice | random       |  20 |          -0.4079 |      0.0634 |       0      | True          |
+| mean_speed_kmh       | hawk_dove       | lead_out     |  20 |           1.4298 |      0.154  |       0      | True          |
+| winner_time_s        | hawk_dove       | lead_out     |  20 |           8.4    |      3.0985 |       0.0002 | True          |
+| finish_spread_s      | hawk_dove       | lead_out     |  20 |          -6.35   |      7.6712 |       0.1124 | False         |
+| winner_pull_share    | hawk_dove       | lead_out     |  20 |           0      |      0      |     nan      | False         |
+| drafted_share        | hawk_dove       | lead_out     |  20 |           0.1473 |      0.0082 |       0      | True          |
+| winner_drafted_share | hawk_dove       | lead_out     |  20 |          -0.186  |      0.0909 |       0.0007 | True          |
+| mean_speed_kmh       | hawk_dove       | public_goods |  20 |           0.145  |      0.1497 |       0.0897 | False         |
+| winner_time_s        | hawk_dove       | public_goods |  20 |          -6.4    |      3.2118 |       0.0035 | True          |
+| finish_spread_s      | hawk_dove       | public_goods |  20 |          15.25   |     10.6072 |       0.0105 | True          |
+| winner_pull_share    | hawk_dove       | public_goods |  20 |          -0.2881 |      0.0841 |       0      | True          |
+| drafted_share        | hawk_dove       | public_goods |  20 |           0.0044 |      0.0172 |       0.6215 | False         |
+| winner_drafted_share | hawk_dove       | public_goods |  20 |           0.0651 |      0.1032 |       0.4304 | False         |
+| mean_speed_kmh       | hawk_dove       | random       |  20 |          -2.0064 |      0.2255 |       0      | True          |
+| winner_time_s        | hawk_dove       | random       |  20 |          -3.05   |      2.4834 |       0.0219 | True          |
+| finish_spread_s      | hawk_dove       | random       |  20 |          20      |      8.7702 |       0.0006 | True          |
+| winner_pull_share    | hawk_dove       | random       |  20 |          -0.2035 |      0.0121 |       0.0001 | True          |
+| drafted_share        | hawk_dove       | random       |  20 |          -0.1544 |      0.0154 |       0      | True          |
+| winner_drafted_share | hawk_dove       | random       |  20 |          -0.0706 |      0.0678 |       0.0696 | True          |
+| mean_speed_kmh       | lead_out        | public_goods |  20 |          -1.2848 |      0.1785 |       0      | True          |
+| winner_time_s        | lead_out        | public_goods |  20 |         -14.8    |      2.7692 |       0.0001 | True          |
+| finish_spread_s      | lead_out        | public_goods |  20 |          21.6    |      5.6965 |       0.0001 | True          |
+| winner_pull_share    | lead_out        | public_goods |  20 |          -0.2881 |      0.0841 |       0      | True          |
+| drafted_share        | lead_out        | public_goods |  20 |          -0.1429 |      0.0151 |       0      | True          |
+| winner_drafted_share | lead_out        | public_goods |  20 |           0.2511 |      0.1261 |       0.0003 | True          |
+| mean_speed_kmh       | lead_out        | random       |  20 |          -3.4362 |      0.2005 |       0      | True          |
+| winner_time_s        | lead_out        | random       |  20 |         -11.45   |      2.0846 |       0.0001 | True          |
+| finish_spread_s      | lead_out        | random       |  20 |          26.35   |      7.1242 |       0.0001 | True          |
+| winner_pull_share    | lead_out        | random       |  20 |          -0.2035 |      0.0121 |       0.0001 | True          |
+| drafted_share        | lead_out        | random       |  20 |          -0.3017 |      0.0146 |       0      | True          |
+| winner_drafted_share | lead_out        | random       |  20 |           0.1154 |      0.0683 |       0.0037 | True          |
+| mean_speed_kmh       | public_goods    | random       |  20 |          -2.1514 |      0.1718 |       0      | True          |
+| winner_time_s        | public_goods    | random       |  20 |           3.35   |      2.1489 |       0.0054 | True          |
+| finish_spread_s      | public_goods    | random       |  20 |           4.75   |     10.0972 |       0.2321 | False         |
+| winner_pull_share    | public_goods    | random       |  20 |           0.0846 |      0.0802 |       0.0441 | True          |
+| drafted_share        | public_goods    | random       |  20 |          -0.1588 |      0.0167 |       0      | True          |
+| winner_drafted_share | public_goods    | random       |  20 |          -0.1357 |      0.1021 |       0.0121 | True          |

@@ -1,0 +1,5 @@
+observable,target,weight,source
+mean_speed_kmh,48.0,1.0,"Criterium/short-circuit race speeds and pro flat-finale bunch speeds are both widely reported in the 45-50 km/h band; illustrative midpoint (referent system: ~4 km criterium, see data/README.md)"
+winner_peak_speed_kmh,66.0,1.0,"Field-sprint peak speeds typically reported at 65-75 km/h (sprint power/speed literature and race telemetry); conservative low end"
+winner_drafted_share,0.85,1.5,"Sprint winners spend almost the whole race sheltered and are delivered by a train; consistent with lead-out accounts and Hoenigman et al. (2011) cooperation modelling"
+drop_rate,0.04,0.5,"A small percentage of the field distanced in a hard finale; KNOWN MISFIT kept deliberately - the model fades riders rather than dropping them on a short flat circuit (see docs/game-theory.md 4.4)"

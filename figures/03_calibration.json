@@ -1,0 +1,46 @@
+{
+  "params": {
+    "w_cost": 0.35,
+    "w_shelter": 0.27999999999999997,
+    "w_position": 1.4,
+    "lam": 8.0
+  },
+  "loss": 0.5700035728261522,
+  "loss_holdout": 0.5798420082594105,
+  "sim": {
+    "n_riders": 48.0,
+    "finish_rate": 1.0,
+    "drop_rate": 0.0,
+    "mean_speed_kmh": 55.56041406357002,
+    "winner_time_s": 235.2,
+    "finish_spread_s": 43.2,
+    "drafted_share": 0.47421593449097366,
+    "share_pull": 0.020929155082547952,
+    "share_draft": 0.17475030908328315,
+    "share_speed_up": 0.7756935283146491,
+    "share_keep": 0.024328722440399485,
+    "share_slow_down": 0.004298285079120304,
+    "winner_skill": 1.1518959327348801,
+    "winner_peak_speed_kmh": 64.8,
+    "winner_drafted_share": 0.7029982778574213,
+    "winner_pull_share": 0.0255772247411414
+  },
+  "sim_holdout": {
+    "n_riders": 48.0,
+    "finish_rate": 1.0,
+    "drop_rate": 0.0,
+    "mean_speed_kmh": 56.011474439628344,
+    "winner_time_s": 232.6,
+    "finish_spread_s": 50.6,
+    "drafted_share": 0.49047435457558936,
+    "share_pull": 0.02208780505395323,
+    "share_draft": 0.1733974136877265,
+    "share_speed_up": 0.7757309174879599,
+    "share_keep": 0.02415214333408642,
+    "share_slow_down": 0.004631720436274021,
+    "winner_skill": 1.2124662387277576,
+    "winner_peak_speed_kmh": 64.8,
+    "winner_drafted_share": 0.6922661506352494,
+    "winner_pull_share": 0.025825867027583764
+  }
+}
