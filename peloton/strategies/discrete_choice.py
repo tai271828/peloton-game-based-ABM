@@ -112,6 +112,7 @@ class DiscreteChoiceStrategy(BaseStrategy):
         else:
             team_help = 0.2
 
+        # force the agent make a decision to pull or draft
         u_pull = -self.w_cost * extra_cost * shadow * scarcity \
             + self.w_team * team_help
         u_draft = self.w_pos * sprint_win * urgency
